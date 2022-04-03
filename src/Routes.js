@@ -3,7 +3,7 @@ import App from './App'
 
 export default function AppRoutes() {
     return(
-        <Router>
+        <Router basename="/tenzies">
             <Routes>
                 <Route path="/" element={<App />} />
                 <Route path="/tenzies" element={<App />} />
