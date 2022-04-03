@@ -6,7 +6,6 @@ import Die from './components/Die'
 import DiceNumber from './components/DiceNumber'
 
 export default function App() {
-  const [coloredBackground, setColoredBackground] = useState(false)
   const [selectedDiceNumber, setSelectedDiceNumber] = useState()
 
   const bestScoreKey = `best_score_${selectedDiceNumber}`
