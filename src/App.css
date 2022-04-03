@@ -1,10 +1,23 @@
-main {
-    background: #0B2434;
+.main-body {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+}
+
+main,
+section {
+    background: rgba(11, 36, 52, 0.7);
 
     width: 50vw;
     min-width: 400px;
-    height: 60vh;
-    min-height: 500px;
+
+    padding: 8px;
 
     font-family: 'Karla';
     font-weight: 700;
@@ -12,19 +25,60 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    border-radius: 6px;
+}
+
+section {
+    height: 65px;
+    margin-bottom: 30px;
+}
+
+main {
+    height: fit-content;
 }
 
 .container {
-    width: 90%;
-    height: 80%;
-
     background: #F5F5F5;
     border-radius: 6px;
 
-    padding: 45px;
-
     display: flex;
     align-items: center;
+}
+
+.infos {
+    width: 100%;
+    height: 100%;
+
+    padding: 0 20px;
+
+    display: flex;
+
+    gap: 30px;
+}
+
+.dice-number-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: auto;
+}
+
+.number-of-rolls>.rolls {
+    color: red
+}
+
+.best-score>.score {
+    color: green
+}
+
+.tenzies {
+    width: 100%;
+
+    padding: 45px;
+
     flex-direction: column;
 }
 
@@ -59,9 +113,17 @@ h2 {
 
 .dice-container {
     display: grid;
-    grid-template: auto auto / repeat(5, 1fr);
+    grid-template: auto / repeat(5, 1fr);
     margin-bottom: 40px;
     margin-top: 15px;
+}
+
+.dice-container.five-columns {
+    grid-template: auto / repeat(5, 1fr);
+}
+
+.dice-container.six-columns {
+    grid-template: auto / repeat(6, 1fr);
 }
 
 .roll-button {
@@ -75,7 +137,7 @@ h2 {
     background: #5035FF;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    
+
     font-family: 'Karla';
     font-weight: 700;
     font-size: 20px;
