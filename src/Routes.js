@@ -5,6 +5,7 @@ export default function AppRoutes() {
     return(
         <Router>
             <Routes>
+                <Route path="/" element={<App />} />
                 <Route path="/tenzies" element={<App />} />
             </Routes>
         </Router>
