@@ -12,4 +12,5 @@ body {
   justify-content: center;
 
   background: url('./images/dice-background-colored.jpg') no-repeat;
+  background-size: cover;
 }
